@@ -1,0 +1,39 @@
+@import "../../constants/shared.sass"
+
+.App
+  min-height: 100vh
+  background-color: $green
+
+
+.App-container
+  position: relative
+  padding-top: 100px
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+
+@media (min-width: 576px)
+  .App-container
+    max-width: 540px
+
+
+
+@media (min-width: 768px)
+  .App-container
+    max-width: 720px
+
+
+
+@media (min-width: 992px)
+  .App-container
+    max-width: 960px
+
+
+
+@media (min-width: 1200px)
+  .App-container
+    max-width: 1140px

@@ -1,0 +1,8 @@
+export default {
+  OPEN_CARD: "OPEN_CARD",
+  CHECK_PAIR: "CHECK_PAIR",
+  START_GAME: "START_GAME",
+  END_GAME: "END_GAME",
+  SHOW_ALL: "SHOW_ALL",
+  HIDE_ALL: "HIDE_ALL"
+}

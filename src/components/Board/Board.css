@@ -1,0 +1,22 @@
+.button-text {
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer; }
+
+.Board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .Board-card {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 16.66667%;
+    width: 16.66667%;
+    margin-bottom: 15px; }
+
+@media (max-width: 768px) {
+  .Board-card {
+    flex: 0 0 33.33333%; } }

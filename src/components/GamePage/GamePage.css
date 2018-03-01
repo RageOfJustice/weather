@@ -1,0 +1,25 @@
+.button-text {
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer; }
+
+.GamePage-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 16px; }
+
+.GamePage-button {
+  padding: 0;
+  outline: none !important;
+  font-weight: 600;
+  transition: all 0.3s;
+  opacity: .8; }
+  .GamePage-button:hover {
+    opacity: 1; }
+
+.GamePage-score {
+  font-weight: bold;
+  opacity: .8; }
