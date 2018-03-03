@@ -1,0 +1,9 @@
+.button-text {
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer; }
+
+.SearchPage {
+  background-color: white;
+  padding: 5px 10px; }

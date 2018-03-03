@@ -4,7 +4,7 @@
   border: none;
   cursor: pointer; }
 
-.App-container {
+.Menu-container {
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
@@ -12,21 +12,30 @@
   margin-left: auto; }
 
 @media (min-width: 576px) {
-  .App-container {
+  .Menu-container {
     max-width: 540px; } }
 
 @media (min-width: 768px) {
-  .App-container {
+  .Menu-container {
     max-width: 720px; } }
 
 @media (min-width: 992px) {
-  .App-container {
+  .Menu-container {
     max-width: 960px; } }
 
 @media (min-width: 1200px) {
-  .App-container {
+  .Menu-container {
     max-width: 1140px; } }
 
-.App {
-  background-image: url(../../constants/grad.gif);
-  min-height: 100vh; }
+.Menu {
+  display: flex; }
+  .Menu-wrapper {
+    background-color: #fff;
+    z-index: 10; }
+  .Menu-link {
+    display: inline-block;
+    padding: 20px;
+    color: #333; }
+    .Menu-link._active, .Menu-link:hover:not(._active) {
+      background-image: url(../../constants/grad.gif);
+      color: #fafafa; }

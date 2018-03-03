@@ -1,5 +1,6 @@
 import {combineReducers} from "redux-immutable";
-import game from "./game";
+import search from './search';
+import favorites from "./favorites";
+import more from "./more";
 
-
-export default combineReducers({game});
+export default combineReducers({search, favorites, more});

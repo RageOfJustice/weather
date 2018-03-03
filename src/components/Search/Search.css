@@ -1,0 +1,10 @@
+.button-text {
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer; }
+
+.Search-input {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 10px; }

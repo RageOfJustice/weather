@@ -1,0 +1,42 @@
+.button-text {
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer; }
+
+.SearchList {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.SearchList {
+  margin-top: 15px; }
+  .SearchList-item {
+    display: flex; }
+  .SearchList-link {
+    padding: 20px 0;
+    flex-grow: 1;
+    transition: all 0.3s linear;
+    border-left: #2196F3 solid 0px;
+    color: #333 !important;
+    text-decoration: none !important; }
+    .SearchList-link:hover {
+      border-left-width: 6px;
+      padding-left: 6px; }
+  .SearchList-to-favorites {
+    flex-shrink: 0;
+    align-self: center;
+    cursor: pointer;
+    color: #130c2c;
+    background: none;
+    text-align: center;
+    border: none;
+    transition: all 0.3s; }
+    .SearchList-to-favorites:active, .SearchList-to-favorites:focus {
+      outline: none; }
+    .SearchList-to-favorites:hover {
+      box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.5); }
+    .SearchList-to-favorites._disabled {
+      pointer-events: none;
+      opacity: 0.5;
+      cursor: default; }

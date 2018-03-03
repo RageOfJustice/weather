@@ -1,0 +1,33 @@
+@import '../../constants/shared'
+.FavoritesList
+  @extend %list-clean
+  margin-top: 15px
+  &-item
+    display: flex
+  &-link
+    padding: 20px 0
+    flex-grow: 1
+    transition: all 0.3s linear
+    border-left: $blue solid 0px
+    color: $text !important
+    text-decoration: none !important
+    &:hover
+      border-left-width: 6px
+      padding-left: 6px
+  &-from-favorites
+    flex-shrink: 0
+    align-self: center
+    cursor: pointer
+    color: $purple
+    background: none
+    text-align: center
+    border: none
+    transition: all 0.3s
+    &:active, &:focus
+      outline: none
+    &:hover
+      box-shadow: 1px 1px 1px 0 transparentize(black, .5)
+    &._disabled
+      pointer-events: none
+      opacity: 0.5
+      cursor: default

@@ -1,0 +1,16 @@
+.button-text {
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer; }
+
+.Day-row {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px; }
+
+.Day-img {
+  width: 50px; }

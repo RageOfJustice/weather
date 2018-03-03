@@ -1,0 +1,27 @@
+.button-text {
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer; }
+
+.MorePage {
+  background-color: white;
+  padding: 5px 10px; }
+
+.MorePage-body {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px; }
+
+.MorePage-col {
+  padding: 0 15px;
+  flex: 0 0 33.33333%;
+  width: 33.33333%; }
+
+@media (max-width: 767px) {
+  .MorePage-col {
+    width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 15px; } }

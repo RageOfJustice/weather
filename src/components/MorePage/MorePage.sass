@@ -1,0 +1,21 @@
+@import '../../constants/shared'
+
+.MorePage
+  @extend %card
+  &-body
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -15px
+  &-col
+    padding: 0 15px
+    flex: 0 0 (100% / 3)
+    width: (100% / 3)
+
+@media (max-width: 767px)
+  .MorePage
+    &-col
+      width: 100%
+      flex: 0 0 100%
+      margin-bottom: 15px

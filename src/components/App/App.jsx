@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
-import EnterPageContainer, {EnterPage} from "../EnterPage";
-import GamePage from "../GamePage";
 import './App.css';
+import SearchPage from '../SearchPage';
+import FavoritesPage from '../FavoritesPage';
+import MorePage from '../MorePage';
+import Menu from '../Menu';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
         <div className="App">
+            <Route path="/" component={Menu}/>
             <div className="App-container">
               <Switch>
-                <Route exact path="/" component={EnterPage}/>
-                <Route path="/game" component={GamePage}/>
-                <Route path="/end" component={EnterPageContainer} />
+                <Route exact path="/" component={SearchPage}/>
+                <Route path="/favorites" component={FavoritesPage}/>
+                <Route path="/more/:woeid" component={MorePage} />
                 <Redirect to="/" />
               </Switch>
             </div>

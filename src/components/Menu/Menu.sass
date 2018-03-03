@@ -1,0 +1,16 @@
+@import '../../constants/shared'
+
+.Menu
+  display: flex
+  &-wrapper
+    background-color: #fff
+    z-index: 10
+  &-container
+    @extend %container
+  &-link
+    display: inline-block
+    padding: 20px
+    color: $text
+    &._active, &:hover:not(._active)
+      background-image: url(../../constants/grad.gif)
+      color: #fafafa

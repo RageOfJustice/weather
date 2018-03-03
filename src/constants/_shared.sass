@@ -1,7 +1,44 @@
 $green: #1b702f
+$purple: #130c2c
+$blue: #2196F3
+$text: #333
 
 .button-text
   color: inherit
   background: none
   border: none
   cursor: pointer
+
+
+%list-clean
+  margin: 0
+  padding: 0
+  list-style: none
+
+%card
+  background-color: white
+  padding: 5px 10px
+
+
+%container
+  position: relative
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+
+@media (min-width: 576px)
+  %container
+    max-width: 540px
+
+@media (min-width: 768px)
+  %container
+    max-width: 720px
+
+@media (min-width: 992px)
+  %container
+    max-width: 960px
+
+@media (min-width: 1200px)
+  %container
+    max-width: 1140px
