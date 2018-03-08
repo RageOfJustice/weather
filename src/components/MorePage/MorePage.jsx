@@ -32,14 +32,14 @@ class MorePage extends Component{
 		return(
 			<div className="MorePage">
 				<div className="MorePage-head">
-					<h2 className="MorePage-header">{this.props.more.getIn(["cities", this.props.match.params.woeid, "parent", "title"])}</h2>
+					<h2 className="MorePage-header">{this.props.more.getIn(["cities", this.props.match.params.woeid, "title"])}</h2>
 					<div className="MorePage-update">
 						Last update in {this.state.lastUpdate.format("hh:mm:ss")} <button onClick={this.updateInfo} className="MorePage-refresh"><Refresh/></button>
 					</div>
 				</div>
 				<div className="MorePage-body">
 				{this.props.more.getIn(["cities", this.props.match.params.woeid, "consolidated_weather"]).valueSeq().map((val, key) => (
-					<div key={key} className="MorePage-col"><Day  day={val} /></div>
+					<div key={key} className="MorePage-col"><Day day={val}/></div>
 				))}
 					</div>
 			</div>

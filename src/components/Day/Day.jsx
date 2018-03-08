@@ -17,6 +17,7 @@ class Day extends Component{
 		const {day} = this.props;
 		let header;
 		switch(this.state.date.getDate()){
+			case this.state.now.getDate() -1: header = "Yesterday"; break;
 			case this.state.now.getDate(): header = "Today"; break;
 			case this.state.now.getDate() + 1: header = "Tomorrow"; break;
 			default:
@@ -43,7 +44,7 @@ class Day extends Component{
 				</div>
 				<div className="Day-row">
 					<div className="Day-property">Wind direction</div>
-					<div className="Day-value">{Math.round(day.get("wind_direction"))} &deg;</div>
+					<div className="Day-value">{Math.round(day.get("wind_direction"))}&deg;</div>
 				</div>
 			</div>
 		)
